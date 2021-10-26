@@ -15,7 +15,7 @@ NEWSPIDER_MODULE = 'flipkart_scraper.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'flipkart_scraper (+http://www.yourdomain.com)'
-USER_AGENT = 'https://developers.whatismybrowser.com/useragents/parse/79googlebot'
+# USER_AGENT = 'https://developers.whatismybrowser.com/useragents/parse/79googlebot'
 
 # Obey robots.txt rules
 # ROBOTSTXT_OBEY = True
@@ -49,10 +49,10 @@ USER_AGENT = 'https://developers.whatismybrowser.com/useragents/parse/79googlebo
 #    'flipkart_scraper.middlewares.FlipkartScraperSpiderMiddleware': 543,
 #}
 
-# DOWNLOADER_MIDDLEWARES = {
-#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-#     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-# }
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html

@@ -8,8 +8,8 @@ import scrapy
 
 class FlipkartScraperItem(scrapy.Item):
     product_name = scrapy.Field()
-    product_image = scrapy.Field()
-    product_rating = scrapy.Field()
+    # product_image = scrapy.Field()
+    # product_rating = scrapy.Field()
     product_features = scrapy.Field()
     product_price = scrapy.Field()
     product_type = scrapy.Field()
